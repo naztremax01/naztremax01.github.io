@@ -20,6 +20,7 @@
     <!-- MOBILE ICONS -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
     <script src="https://kit.fontawesome.com/d493775ae4.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
 </head>
 
@@ -63,21 +64,16 @@
             </div>
         </div>
         <div class="contact-col">
-            <form method="POST" data-netlify="true">
+            <form onsubmit="return postToGoogle();" id="contact">
                 
-                    <input type="text" name="name" id="name" placeholder="Enter your name" required>
-                    <br>
-                    <input type="email" name="email" id="email" placeholder="Enter your email address" required>
-                    <br>
-                    <textarea rows="10" name="message" id="message" placeholder="Enter your message" required></textarea>
-                    <br>
-                    <div class="field">
-                        <div data-netlify-recaptcha="true">
-
-                        </div>
-                    </div>
+                <input type="text" name="entry.2005620554" data-name="Name" id="Name" placeholder="Enter your name" required autofocus>
+                <br>
+                <input type="email" name="entry.1045781291" data-name="Email" id="Email" placeholder="Enter your email address" required>
+                <br>
+                <textarea rows="10" name="entry.1065046570" data-name="Message" id="Message" placeholder="Enter your message" required></textarea>
+                <br>
                 
-                    <button type="submit" value="Submit" class="cv-button purple-button">Submit</button>
+                <button type="submit" name="submit" id="contact-submit" data-submit="...Sending" class="cv-button purple-button">Submit</button>
             </form>
         </div>
     </div>
@@ -112,6 +108,7 @@
 </section>
 
 <script src="menubar.js" charset="utf-8"></script>
+<script src="contactform.js" charset="utf-8"></script>
     
 </body>
 </html>
