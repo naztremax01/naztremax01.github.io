@@ -24,7 +24,7 @@ div{
     left: 0;
     width: 100%;
     height: 100%;
-    background: #03a9f4;
+    background: #121a69;
     mix-blend-mode: overlay;
     
 }
@@ -43,7 +43,7 @@ div{
 .header{
     min-height: 100vh;
     width: 100%;
-    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url();
+    background-image: linear-gradient(rgba(11, 24, 78, 0.7),rgba(4,9,30,0.7)),url();
     background-size: cover;
     background-position: center;
     position: relative;
@@ -133,10 +133,10 @@ nav img{
 }
 
 .text-box{
-    width: 100%;
     color: #fff;
     position: relative;
-    margin-top: 150px;
+    width: 100%;
+    margin-top: 200px;
     margin-bottom: auto;
     justify-content: center;
     text-align: center;
@@ -183,20 +183,51 @@ nav .fa{
     display: none;
 }
 
-@media(max-width: 840px){
+@media (max-height: 800px){
     .text-box{
         margin-top: 200px;
     }
 
+    .text-box h4{
+        line-height: 0;
+    }
+}
+
+@media (max-height: 600px){
+    .text-box{
+        margin-top: 100px;
+    }
+
+    .text-box h4{
+        line-height: 0;
+    }
+}
+
+@media (max-height: 400px){
+    .text-box{
+        margin-top: 5px;
+    }
+
+    .text-box h4{
+        line-height: 0;
+    }
+
+}
+
+@media (max-width: 840px){
+    .text-box{
+        margin-top: 280px;
+    }
+
     .text-box h1{
-        font-size: 35px;
+        font-size: 55px;
     }
     .text-box h1:hover{
-        font-size: 37px;
+        font-size: 57px;
     }
 
     .text-box h3{
-        font-size: 20px;
+        font-size: 40px;
     }
     .text-box h4{
         font-size: 12px;
@@ -215,7 +246,7 @@ nav .fa{
         display: block;
         color: #fff;
         margin: 10px;
-        font-size: 30px;
+        font-size: 35px;
         cursor: pointer;
     }
     .nav-links ul li{
@@ -228,7 +259,7 @@ nav .fa{
     }
     .nav-links{
         position: fixed;
-        background: #7060ac;
+        background: #2f2555;
         height: 100vh;
         width: 200px;
         top: 0;
@@ -251,7 +282,7 @@ nav .fa{
     }
     .homenav-links{
         position: absolute;
-        background: #7060ac;
+        background: #2f2555;
         height: 100vh;
         width: 200px;
         top: 0;
@@ -263,7 +294,2184 @@ nav .fa{
     .homenav-links ul{
         padding: 30px;
     }
+
+    .homeicons li:hover{
+        transform: translateY(-15px);
+    }
     
+    .homeicons .fa{
+        color: #fff;
+        margin: 0 13px;
+        cursor: pointer;
+        padding: 18px 0;
+        font-size: 30px;
+        margin-bottom: auto;
+    }
+    
+    @media (max-height: 850px){
+        .text-box{
+            margin-top: 150px;
+        }
+    
+        .text-box h1{
+            font-size: 45px;
+        }
+        .text-box h1:hover{
+            font-size: 47px;
+        }
+    
+        .text-box h3{
+            font-size: 30px;
+            line-height: 25px;
+        }
+        .text-box h4{
+            font-size: 15px;
+            line-height: 30px;
+            font-weight: 400;
+            opacity: 100%;
+        }
+        nav img{
+            width: 100px;
+            display: block;
+            position: absolute;
+            background: none;
+            left: 20px;
+            top: 0;
+        }
+        nav .fa{
+            display: block;
+            color: #fff;
+            margin: 10px;
+            font-size: 35px;
+            cursor: pointer;
+        }
+        .nav-links ul li{
+            display: block;
+        }
+        .nav-links ul li a{
+            color: #fff;
+            text-decoration: none;
+            font-size: 15px;
+        }
+        .nav-links{
+            position: fixed;
+            background: #2f2555;
+            height: 100vh;
+            width: 200px;
+            top: 0;
+            right: -200px;
+            text-align: left;
+            z-index: 2;
+            transition: 0.5s;
+        }
+        .nav-links ul{
+            padding: 30px;
+        }
+    
+        .homenav-links ul li{
+            display: block;
+        }
+        .homenav-links ul li a{
+            color: #fff;
+            text-decoration: none;
+            font-size: 15px;
+        }
+        .homenav-links{
+            position: absolute;
+            background: #2f2555;
+            height: 100vh;
+            width: 200px;
+            top: 0;
+            right: -200px;
+            text-align: left;
+            z-index: 2;
+            transition: 0.5s;
+        }
+        .homenav-links ul{
+            padding: 30px;
+        }
+    
+        .homeicons li:hover{
+            transform: translateY(-10px);
+        }
+        
+        .homeicons .fa{
+            color: #fff;
+            margin: 0 13px;
+            cursor: pointer;
+            padding: 18px 0;
+            font-size: 25px;
+            margin-bottom: auto;
+        }
+
+        .cv-button{
+            display: inline-block;
+            text-decoration: none;
+            color: #fff;
+            border: 1px solid #fff;
+            padding: 10px 30px;
+            font-size: 13px;
+            background: transparent;
+            position: relative;
+            cursor: pointer;
+        }
+        
+    }
+
+    @media (max-height: 650px){
+        .text-box{
+            margin-top: 45px;
+        }
+    
+        .text-box h1{
+            font-size: 45px;
+        }
+        .text-box h1:hover{
+            font-size: 47px;
+        }
+    
+        .text-box h3{
+            font-size: 30px;
+            line-height: 25px;
+        }
+        .text-box h4{
+            font-size: 15px;
+            line-height: 20px;
+            opacity: 100%;
+        }
+        nav img{
+            width: 100px;
+            display: block;
+            position: absolute;
+            background: none;
+            left: 20px;
+            top: 0;
+        }
+        nav .fa{
+            display: block;
+            color: #fff;
+            margin: 10px;
+            font-size: 35px;
+            cursor: pointer;
+        }
+        .nav-links ul li{
+            display: block;
+        }
+        .nav-links ul li a{
+            color: #fff;
+            text-decoration: none;
+            font-size: 15px;
+        }
+        .nav-links{
+            position: fixed;
+            background: #2f2555;
+            height: 100vh;
+            width: 200px;
+            top: 0;
+            right: -200px;
+            text-align: left;
+            z-index: 2;
+            transition: 0.5s;
+        }
+        .nav-links ul{
+            padding: 30px;
+        }
+    
+        .homenav-links ul li{
+            display: block;
+        }
+        .homenav-links ul li a{
+            color: #fff;
+            text-decoration: none;
+            font-size: 15px;
+        }
+        .homenav-links{
+            position: absolute;
+            background: #2f2555;
+            height: 100vh;
+            width: 200px;
+            top: 0;
+            right: -200px;
+            text-align: left;
+            z-index: 2;
+            transition: 0.5s;
+        }
+        .homenav-links ul{
+            padding: 30px;
+        }
+    
+        .homeicons li:hover{
+            transform: translateY(-10px);
+        }
+        
+        .homeicons .fa{
+            color: #fff;
+            margin: 0 13px;
+            cursor: pointer;
+            padding: 18px 0;
+            font-size: 25px;
+            margin-bottom: auto;
+        }
+
+        .cv-button{
+            display: inline-block;
+            text-decoration: none;
+            color: #fff;
+            border: 1px solid #fff;
+            padding: 10px 30px;
+            font-size: 13px;
+            background: transparent;
+            position: relative;
+            cursor: pointer;
+        }
+        
+    }
+
+    @media (max-height: 450px){
+        .text-box{
+            margin-top: 5px;
+        }
+    
+        .text-box h1{
+            font-size: 45px;
+        }
+        .text-box h1:hover{
+            font-size: 47px;
+        }
+    
+        .text-box h3{
+            font-size: 30px;
+            line-height: 25px;
+        }
+        .text-box h4{
+            font-size: 15px;
+            line-height: 20px;
+            opacity: 100%;
+        }
+        nav img{
+            width: 100px;
+            display: block;
+            position: absolute;
+            background: none;
+            left: 20px;
+            top: 0;
+        }
+        nav .fa{
+            display: block;
+            color: #fff;
+            margin: 10px;
+            font-size: 35px;
+            cursor: pointer;
+        }
+        .nav-links ul li{
+            display: block;
+        }
+        .nav-links ul li a{
+            color: #fff;
+            text-decoration: none;
+            font-size: 15px;
+        }
+        .nav-links{
+            position: fixed;
+            background: #2f2555;
+            height: 100vh;
+            width: 200px;
+            top: 0;
+            right: -200px;
+            text-align: left;
+            z-index: 2;
+            transition: 0.5s;
+        }
+        .nav-links ul{
+            padding: 30px;
+        }
+    
+        .homenav-links ul li{
+            display: block;
+        }
+        .homenav-links ul li a{
+            color: #fff;
+            text-decoration: none;
+            font-size: 15px;
+        }
+        .homenav-links{
+            position: absolute;
+            background: #2f2555;
+            height: 100vh;
+            width: 200px;
+            top: 0;
+            right: -200px;
+            text-align: left;
+            z-index: 2;
+            transition: 0.5s;
+        }
+        .homenav-links ul{
+            padding: 30px;
+        }
+    
+        .homeicons li:hover{
+            transform: translateY(-10px);
+        }
+        
+        .homeicons .fa{
+            color: #fff;
+            margin: 0 13px;
+            cursor: pointer;
+            padding: 18px 0;
+            font-size: 25px;
+            margin-bottom: auto;
+        }
+
+        .cv-button{
+            display: inline-block;
+            text-decoration: none;
+            color: #fff;
+            border: 1px solid #fff;
+            padding: 10px 30px;
+            font-size: 13px;
+            background: transparent;
+            position: relative;
+            cursor: pointer;
+        }
+        
+    }
+
+}
+
+@media (max-width: 699px){
+    .text-box{
+        margin-top: 230px;
+    }
+
+    .text-box h1{
+        font-size: 46px;
+        line-height: 30px;
+    }
+    .text-box h1:hover{
+        font-size: 50px;
+    }
+
+    .text-box h3{
+        font-size: 28px;
+        line-height: 30px;
+    }
+    .text-box h4{
+        font-size: 18px;
+        line-height: 30px;
+        font-weight: 400;
+        opacity: 100%;
+    }
+    nav img{
+        width: 90px;
+        display: block;
+        position: absolute;
+        background: none;
+        left: 10px;
+        top: 0;
+    }
+    nav .fa{
+        display: block;
+        color: #fff;
+        margin: 15px;
+        font-size: 35px;
+        cursor: pointer;
+    }
+    .nav-links ul li{
+        display: block;
+    }
+    .nav-links ul li a{
+        color: #fff;
+        text-decoration: none;
+        font-size: 15px;
+    }
+    .nav-links{
+        position: fixed;
+        background: #2f2555;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: -200px;
+        text-align: left;
+        z-index: 2;
+        transition: 0.5s;
+    }
+    .nav-links ul{
+        padding: 30px;
+    }
+
+    .homenav-links ul li{
+        display: block;
+    }
+    .homenav-links ul li a{
+        color: #fff;
+        text-decoration: none;
+        font-size: 15px;
+    }
+    .homenav-links{
+        position: absolute;
+        background: #2f2555;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: -200px;
+        text-align: left;
+        z-index: 2;
+        transition: 0.5s;
+    }
+    .homenav-links ul{
+        padding: 30px;
+    }
+
+    .cv-button{
+        display: inline-block;
+        text-decoration: none;
+        color: #fff;
+        border: 1px solid #fff;
+        padding: 12px 34px;
+        font-size: 13px;
+        background: transparent;
+        position: relative;
+        cursor: pointer;
+    }
+    
+    .cv-button:hover{
+        border: 1px solid #7060ac;
+        background: #7060ac;
+        transition: 0.5s;
+    }
+    
+    .homeicons li:hover{
+        transform: translateY(-15px);
+    }
+    
+    .homeicons .fa{
+        color: #fff;
+        margin: 0 13px;
+        cursor: pointer;
+        padding: 18px 0;
+        font-size: 30px;
+    }
+
+    @media (max-height: 850px){
+        .text-box{
+            margin-top: 150px;
+        }
+    
+        .text-box h1{
+            font-size: 38px;
+            line-height: 20px;
+        }
+        .text-box h1:hover{
+            font-size: 40px;
+        }
+    
+        .text-box h3{
+            font-size: 28px;
+            line-height: 20px;
+        }
+        .text-box h4{
+            font-size: 18px;
+            line-height: 30px;
+            font-weight: 400;
+            opacity: 100%;
+        }
+        nav img{
+            width: 90px;
+            display: block;
+            position: absolute;
+            background: none;
+            left: 10px;
+            top: 0;
+        }
+        nav .fa{
+            display: block;
+            color: #fff;
+            margin: 15px;
+            font-size: 35px;
+            cursor: pointer;
+        }
+        .nav-links ul li{
+            display: block;
+        }
+        .nav-links ul li a{
+            color: #fff;
+            text-decoration: none;
+            font-size: 15px;
+        }
+        .nav-links{
+            position: fixed;
+            background: #2f2555;
+            height: 100vh;
+            width: 200px;
+            top: 0;
+            right: -200px;
+            text-align: left;
+            z-index: 2;
+            transition: 0.5s;
+        }
+        .nav-links ul{
+            padding: 30px;
+        }
+    
+        .homenav-links ul li{
+            display: block;
+        }
+        .homenav-links ul li a{
+            color: #fff;
+            text-decoration: none;
+            font-size: 15px;
+        }
+        .homenav-links{
+            position: absolute;
+            background: #2f2555;
+            height: 100vh;
+            width: 200px;
+            top: 0;
+            right: -200px;
+            text-align: left;
+            z-index: 2;
+            transition: 0.5s;
+        }
+        .homenav-links ul{
+            padding: 30px;
+        }
+    
+        .cv-button{
+            display: inline-block;
+            text-decoration: none;
+            color: #fff;
+            border: 1px solid #fff;
+            padding: 12px 34px;
+            font-size: 13px;
+            background: transparent;
+            position: relative;
+            cursor: pointer;
+        }
+        
+        .cv-button:hover{
+            border: 1px solid #7060ac;
+            background: #7060ac;
+            transition: 0.5s;
+        }
+        
+        .homeicons li:hover{
+            transform: translateY(-15px);
+        }
+        
+        .homeicons .fa{
+            color: #fff;
+            margin: 0 13px;
+            cursor: pointer;
+            padding: 18px 0;
+            font-size: 30px;
+        }
+    }
+
+    @media (max-height: 650px){
+        .text-box{
+            margin-top: 70px;
+        }
+    
+        .text-box h1{
+            font-size: 38px;
+            line-height: 20px;
+        }
+        .text-box h1:hover{
+            font-size: 40px;
+        }
+    
+        .text-box h3{
+            font-size: 28px;
+            line-height: 20px;
+        }
+        .text-box h4{
+            font-size: 18px;
+            line-height: 30px;
+            font-weight: 400;
+            opacity: 100%;
+        }
+        nav img{
+            width: 90px;
+            display: block;
+            position: absolute;
+            background: none;
+            left: 10px;
+            top: 0;
+        }
+        nav .fa{
+            display: block;
+            color: #fff;
+            margin: 15px;
+            font-size: 35px;
+            cursor: pointer;
+        }
+        .nav-links ul li{
+            display: block;
+        }
+        .nav-links ul li a{
+            color: #fff;
+            text-decoration: none;
+            font-size: 15px;
+        }
+        .nav-links{
+            position: fixed;
+            background: #2f2555;
+            height: 100vh;
+            width: 200px;
+            top: 0;
+            right: -200px;
+            text-align: left;
+            z-index: 2;
+            transition: 0.5s;
+        }
+        .nav-links ul{
+            padding: 30px;
+        }
+    
+        .homenav-links ul li{
+            display: block;
+        }
+        .homenav-links ul li a{
+            color: #fff;
+            text-decoration: none;
+            font-size: 15px;
+        }
+        .homenav-links{
+            position: absolute;
+            background: #2f2555;
+            height: 100vh;
+            width: 200px;
+            top: 0;
+            right: -200px;
+            text-align: left;
+            z-index: 2;
+            transition: 0.5s;
+        }
+        .homenav-links ul{
+            padding: 30px;
+        }
+    
+        .cv-button{
+            display: inline-block;
+            text-decoration: none;
+            color: #fff;
+            border: 1px solid #fff;
+            padding: 12px 34px;
+            font-size: 13px;
+            background: transparent;
+            position: relative;
+            cursor: pointer;
+        }
+        
+        .cv-button:hover{
+            border: 1px solid #7060ac;
+            background: #7060ac;
+            transition: 0.5s;
+        }
+        
+        .homeicons li:hover{
+            transform: translateY(-15px);
+        }
+        
+        .homeicons .fa{
+            color: #fff;
+            margin: 0 13px;
+            cursor: pointer;
+            padding: 18px 0;
+            font-size: 30px;
+        }
+    }
+
+    @media (max-height: 450px){
+        .text-box{
+            margin-top: 5px;
+        }
+    
+        .text-box h1{
+            font-size: 38px;
+            line-height: 20px;
+        }
+        .text-box h1:hover{
+            font-size: 40px;
+        }
+    
+        .text-box h3{
+            font-size: 28px;
+            line-height: 20px;
+        }
+        .text-box h4{
+            font-size: 18px;
+            line-height: 30px;
+            font-weight: 400;
+            opacity: 100%;
+        }
+        nav img{
+            width: 90px;
+            display: block;
+            position: absolute;
+            background: none;
+            left: 10px;
+            top: 0;
+        }
+        nav .fa{
+            display: block;
+            color: #fff;
+            margin: 15px;
+            font-size: 35px;
+            cursor: pointer;
+        }
+        .nav-links ul li{
+            display: block;
+        }
+        .nav-links ul li a{
+            color: #fff;
+            text-decoration: none;
+            font-size: 15px;
+        }
+        .nav-links{
+            position: fixed;
+            background: #2f2555;
+            height: 100vh;
+            width: 200px;
+            top: 0;
+            right: -200px;
+            text-align: left;
+            z-index: 2;
+            transition: 0.5s;
+        }
+        .nav-links ul{
+            padding: 30px;
+        }
+    
+        .homenav-links ul li{
+            display: block;
+        }
+        .homenav-links ul li a{
+            color: #fff;
+            text-decoration: none;
+            font-size: 15px;
+        }
+        .homenav-links{
+            position: absolute;
+            background: #2f2555;
+            height: 100vh;
+            width: 200px;
+            top: 0;
+            right: -200px;
+            text-align: left;
+            z-index: 2;
+            transition: 0.5s;
+        }
+        .homenav-links ul{
+            padding: 30px;
+        }
+    
+        .cv-button{
+            display: inline-block;
+            text-decoration: none;
+            color: #fff;
+            border: 1px solid #fff;
+            padding: 12px 34px;
+            font-size: 13px;
+            background: transparent;
+            position: relative;
+            cursor: pointer;
+        }
+        
+        .cv-button:hover{
+            border: 1px solid #7060ac;
+            background: #7060ac;
+            transition: 0.5s;
+        }
+        
+        .homeicons li:hover{
+            transform: translateY(-15px);
+        }
+        
+        .homeicons .fa{
+            color: #fff;
+            margin: 0 13px;
+            cursor: pointer;
+            padding: 18px 0;
+            font-size: 30px;
+        }
+    }
+
+}
+
+@media (max-width: 499px){
+    .text-box{
+        margin-top: 250px;
+    }
+
+    .text-box h1{
+        font-size: 38px;
+        line-height: 20px;
+    }
+    .text-box h1:hover{
+        font-size: 40px;
+    }
+
+    .text-box h3{
+        font-size: 28px;
+        line-height: 20px;
+    }
+    .text-box h4{
+        font-size: 18px;
+        line-height: 30px;
+        font-weight: 400;
+        opacity: 100%;
+    }
+    nav img{
+        width: 85px;
+        display: block;
+        position: absolute;
+        background: none;
+        left: 10px;
+        top: 0;
+    }
+    nav .fa{
+        display: block;
+        color: #fff;
+        margin: 15px;
+        font-size: 33px;
+        cursor: pointer;
+    }
+    .nav-links ul li{
+        display: block;
+    }
+    .nav-links ul li a{
+        color: #fff;
+        text-decoration: none;
+        font-size: 15px;
+    }
+    .nav-links{
+        position: fixed;
+        background: #2f2555;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: -200px;
+        text-align: left;
+        z-index: 2;
+        transition: 0.5s;
+    }
+    .nav-links ul{
+        padding: 30px;
+    }
+
+    .homenav-links ul li{
+        display: block;
+    }
+    .homenav-links ul li a{
+        color: #fff;
+        text-decoration: none;
+        font-size: 15px;
+    }
+    .homenav-links{
+        position: absolute;
+        background: #2f2555;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: -200px;
+        text-align: left;
+        z-index: 2;
+        transition: 0.5s;
+    }
+    .homenav-links ul{
+        padding: 30px;
+    }
+
+    .cv-button{
+        display: inline-block;
+        text-decoration: none;
+        color: #fff;
+        border: 1px solid #fff;
+        padding: 5px 20px;
+        font-size: 18px;
+        background: transparent;
+        position: relative;
+        cursor: pointer;
+    }
+    
+    .cv-button:hover{
+        border: 1px solid #7060ac;
+        background: #7060ac;
+        transition: 0.5s;
+    }
+    
+    .homeicons li:hover{
+        transform: translateY(-15px);
+    }
+    
+    .homeicons .fa{
+        color: #fff;
+        margin: 0 13px;
+        cursor: pointer;
+        padding: 18px 0;
+        font-size: 30px;
+    }
+
+    @media (max-height: 850px){
+        .text-box{
+            margin-top: 170px;
+        }
+    
+        .text-box h1{
+            font-size: 38px;
+            line-height: 20px;
+        }
+        .text-box h1:hover{
+            font-size: 40px;
+        }
+    
+        .text-box h3{
+            font-size: 28px;
+            line-height: 20px;
+        }
+        .text-box h4{
+            font-size: 18px;
+            line-height: 30px;
+            font-weight: 400;
+            opacity: 100%;
+        }
+        nav img{
+            width: 85px;
+            display: block;
+            position: absolute;
+            background: none;
+            left: 10px;
+            top: 0;
+        }
+        nav .fa{
+            display: block;
+            color: #fff;
+            margin: 15px;
+            font-size: 33px;
+            cursor: pointer;
+        }
+        .nav-links ul li{
+            display: block;
+        }
+        .nav-links ul li a{
+            color: #fff;
+            text-decoration: none;
+            font-size: 15px;
+        }
+        .nav-links{
+            position: fixed;
+            background: #2f2555;
+            height: 100vh;
+            width: 200px;
+            top: 0;
+            right: -200px;
+            text-align: left;
+            z-index: 2;
+            transition: 0.5s;
+        }
+        .nav-links ul{
+            padding: 30px;
+        }
+    
+        .homenav-links ul li{
+            display: block;
+        }
+        .homenav-links ul li a{
+            color: #fff;
+            text-decoration: none;
+            font-size: 15px;
+        }
+        .homenav-links{
+            position: absolute;
+            background: #2f2555;
+            height: 100vh;
+            width: 200px;
+            top: 0;
+            right: -200px;
+            text-align: left;
+            z-index: 2;
+            transition: 0.5s;
+        }
+        .homenav-links ul{
+            padding: 30px;
+        }
+    
+        .cv-button{
+            display: inline-block;
+            text-decoration: none;
+            color: #fff;
+            border: 1px solid #fff;
+            padding: 5px 20px;
+            font-size: 18px;
+            background: transparent;
+            position: relative;
+            cursor: pointer;
+        }
+        
+        .cv-button:hover{
+            border: 1px solid #7060ac;
+            background: #7060ac;
+            transition: 0.5s;
+        }
+        
+        .homeicons li:hover{
+            transform: translateY(-15px);
+        }
+        
+        .homeicons .fa{
+            color: #fff;
+            margin: 0 13px;
+            cursor: pointer;
+            padding: 18px 0;
+            font-size: 30px;
+        }
+    }
+
+    @media (max-height: 650px){
+        .text-box{
+            margin-top: 100px;
+        }
+    
+        .text-box h1{
+            font-size: 38px;
+            line-height: 20px;
+        }
+        .text-box h1:hover{
+            font-size: 40px;
+        }
+    
+        .text-box h3{
+            font-size: 28px;
+            line-height: 20px;
+        }
+        .text-box h4{
+            font-size: 18px;
+            line-height: 30px;
+            font-weight: 400;
+            opacity: 100%;
+        }
+        nav img{
+            width: 85px;
+            display: block;
+            position: absolute;
+            background: none;
+            left: 10px;
+            top: 0;
+        }
+        nav .fa{
+            display: block;
+            color: #fff;
+            margin: 15px;
+            font-size: 33px;
+            cursor: pointer;
+        }
+        .nav-links ul li{
+            display: block;
+        }
+        .nav-links ul li a{
+            color: #fff;
+            text-decoration: none;
+            font-size: 15px;
+        }
+        .nav-links{
+            position: fixed;
+            background: #2f2555;
+            height: 100vh;
+            width: 200px;
+            top: 0;
+            right: -200px;
+            text-align: left;
+            z-index: 2;
+            transition: 0.5s;
+        }
+        .nav-links ul{
+            padding: 30px;
+        }
+    
+        .homenav-links ul li{
+            display: block;
+        }
+        .homenav-links ul li a{
+            color: #fff;
+            text-decoration: none;
+            font-size: 15px;
+        }
+        .homenav-links{
+            position: absolute;
+            background: #2f2555;
+            height: 100vh;
+            width: 200px;
+            top: 0;
+            right: -200px;
+            text-align: left;
+            z-index: 2;
+            transition: 0.5s;
+        }
+        .homenav-links ul{
+            padding: 30px;
+        }
+    
+        .cv-button{
+            display: inline-block;
+            text-decoration: none;
+            color: #fff;
+            border: 1px solid #fff;
+            padding: 5px 20px;
+            font-size: 18px;
+            background: transparent;
+            position: relative;
+            cursor: pointer;
+        }
+        
+        .cv-button:hover{
+            border: 1px solid #7060ac;
+            background: #7060ac;
+            transition: 0.5s;
+        }
+        
+        .homeicons li:hover{
+            transform: translateY(-15px);
+        }
+        
+        .homeicons .fa{
+            color: #fff;
+            margin: 0 13px;
+            cursor: pointer;
+            padding: 18px 0;
+            font-size: 30px;
+        }
+    }
+
+    @media (max-height: 450px){
+        .text-box{
+            margin-top: 5px;
+        }
+    
+        .text-box h1{
+            font-size: 38px;
+            line-height: 20px;
+        }
+        .text-box h1:hover{
+            font-size: 40px;
+        }
+    
+        .text-box h3{
+            font-size: 28px;
+            line-height: 20px;
+        }
+        .text-box h4{
+            font-size: 18px;
+            line-height: 30px;
+            font-weight: 400;
+            opacity: 100%;
+        }
+        nav img{
+            width: 85px;
+            display: block;
+            position: absolute;
+            background: none;
+            left: 10px;
+            top: 0;
+        }
+        nav .fa{
+            display: block;
+            color: #fff;
+            margin: 15px;
+            font-size: 33px;
+            cursor: pointer;
+        }
+        .nav-links ul li{
+            display: block;
+        }
+        .nav-links ul li a{
+            color: #fff;
+            text-decoration: none;
+            font-size: 15px;
+        }
+        .nav-links{
+            position: fixed;
+            background: #2f2555;
+            height: 100vh;
+            width: 200px;
+            top: 0;
+            right: -200px;
+            text-align: left;
+            z-index: 2;
+            transition: 0.5s;
+        }
+        .nav-links ul{
+            padding: 30px;
+        }
+    
+        .homenav-links ul li{
+            display: block;
+        }
+        .homenav-links ul li a{
+            color: #fff;
+            text-decoration: none;
+            font-size: 15px;
+        }
+        .homenav-links{
+            position: absolute;
+            background: #2f2555;
+            height: 100vh;
+            width: 200px;
+            top: 0;
+            right: -200px;
+            text-align: left;
+            z-index: 2;
+            transition: 0.5s;
+        }
+        .homenav-links ul{
+            padding: 30px;
+        }
+    
+        .cv-button{
+            display: inline-block;
+            text-decoration: none;
+            color: #fff;
+            border: 1px solid #fff;
+            padding: 5px 20px;
+            font-size: 18px;
+            background: transparent;
+            position: relative;
+            cursor: pointer;
+        }
+        
+        .cv-button:hover{
+            border: 1px solid #7060ac;
+            background: #7060ac;
+            transition: 0.5s;
+        }
+        
+        .homeicons li:hover{
+            transform: translateY(-15px);
+        }
+        
+        .homeicons .fa{
+            color: #fff;
+            margin: 0 13px;
+            cursor: pointer;
+            padding: 18px 0;
+            font-size: 30px;
+        }
+    }
+
+}
+
+@media (max-width: 399px){
+    .text-box{
+        margin-top: 270px;
+    }
+
+    .text-box h1{
+        font-size: 29px;
+        line-height: 20px;
+    }
+    .text-box h1:hover{
+        font-size: 31px;
+    }
+
+    .text-box h3{
+        font-size: 18px;
+        line-height: 10px;
+    }
+    .text-box h4{
+        font-size: 13px;
+        line-height: 30px;
+        opacity: 100%;
+    }
+    nav img{
+        width: 80px;
+        display: block;
+        position: absolute;
+        background: none;
+        left: 10px;
+        top: 0;
+    }
+    nav .fa{
+        display: block;
+        color: #fff;
+        margin: 15px;
+        font-size: 30px;
+        cursor: pointer;
+    }
+    .nav-links ul li{
+        display: block;
+    }
+    .nav-links ul li a{
+        color: #fff;
+        text-decoration: none;
+        font-size: 15px;
+    }
+    .nav-links{
+        position: fixed;
+        background: #2f2555;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: -200px;
+        text-align: left;
+        z-index: 2;
+        transition: 0.5s;
+    }
+    .nav-links ul{
+        padding: 30px;
+    }
+
+    .homenav-links ul li{
+        display: block;
+    }
+    .homenav-links ul li a{
+        color: #fff;
+        text-decoration: none;
+        font-size: 15px;
+    }
+    .homenav-links{
+        position: absolute;
+        background: #2f2555;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: -200px;
+        text-align: left;
+        z-index: 2;
+        transition: 0.5s;
+    }
+    .homenav-links ul{
+        padding: 30px;
+    }
+
+    .cv-button{
+        display: inline-block;
+        text-decoration: none;
+        color: #fff;
+        border: 1px solid #fff;
+        padding: 5px 20px;
+        font-size: 15px;
+        background: transparent;
+        position: relative;
+        cursor: pointer;
+    }
+    
+    .cv-button:hover{
+        border: 1px solid #7060ac;
+        background: #7060ac;
+        transition: 0.5s;
+    }
+    
+    .homeicons li:hover{
+        transform: translateY(-10px);
+    }
+    
+    .homeicons .fa{
+        color: #fff;
+        margin: 0 13px;
+        cursor: pointer;
+        padding: 18px 0;
+        font-size: 22px;
+    }
+
+    @media (max-height: 850px){
+        .text-box{
+            margin-top: 200px;
+        }
+    
+        .text-box h1{
+            font-size: 29px;
+            line-height: 20px;
+        }
+        .text-box h1:hover{
+            font-size: 31px;
+        }
+    
+        .text-box h3{
+            font-size: 18px;
+            line-height: 10px;
+        }
+        .text-box h4{
+            font-size: 13px;
+            line-height: 30px;
+            opacity: 100%;
+        }
+        nav img{
+            width: 80px;
+            display: block;
+            position: absolute;
+            background: none;
+            left: 10px;
+            top: 0;
+        }
+        nav .fa{
+            display: block;
+            color: #fff;
+            margin: 15px;
+            font-size: 30px;
+            cursor: pointer;
+        }
+        .nav-links ul li{
+            display: block;
+        }
+        .nav-links ul li a{
+            color: #fff;
+            text-decoration: none;
+            font-size: 15px;
+        }
+        .nav-links{
+            position: fixed;
+            background: #2f2555;
+            height: 100vh;
+            width: 200px;
+            top: 0;
+            right: -200px;
+            text-align: left;
+            z-index: 2;
+            transition: 0.5s;
+        }
+        .nav-links ul{
+            padding: 30px;
+        }
+    
+        .homenav-links ul li{
+            display: block;
+        }
+        .homenav-links ul li a{
+            color: #fff;
+            text-decoration: none;
+            font-size: 15px;
+        }
+        .homenav-links{
+            position: absolute;
+            background: #2f2555;
+            height: 100vh;
+            width: 200px;
+            top: 0;
+            right: -200px;
+            text-align: left;
+            z-index: 2;
+            transition: 0.5s;
+        }
+        .homenav-links ul{
+            padding: 30px;
+        }
+    
+        .cv-button{
+            display: inline-block;
+            text-decoration: none;
+            color: #fff;
+            border: 1px solid #fff;
+            padding: 5px 20px;
+            font-size: 15px;
+            background: transparent;
+            position: relative;
+            cursor: pointer;
+        }
+        
+        .cv-button:hover{
+            border: 1px solid #7060ac;
+            background: #7060ac;
+            transition: 0.5s;
+        }
+        
+        .homeicons li:hover{
+            transform: translateY(-10px);
+        }
+        
+        .homeicons .fa{
+            color: #fff;
+            margin: 0 13px;
+            cursor: pointer;
+            padding: 18px 0;
+            font-size: 22px;
+        }
+    }
+
+    @media (max-height: 650px){
+        .text-box{
+            margin-top: 100px;
+        }
+    
+        .text-box h1{
+            font-size: 29px;
+            line-height: 20px;
+        }
+        .text-box h1:hover{
+            font-size: 31px;
+        }
+    
+        .text-box h3{
+            font-size: 18px;
+            line-height: 10px;
+        }
+        .text-box h4{
+            font-size: 13px;
+            line-height: 30px;
+            opacity: 100%;
+        }
+        nav img{
+            width: 80px;
+            display: block;
+            position: absolute;
+            background: none;
+            left: 10px;
+            top: 0;
+        }
+        nav .fa{
+            display: block;
+            color: #fff;
+            margin: 15px;
+            font-size: 30px;
+            cursor: pointer;
+        }
+        .nav-links ul li{
+            display: block;
+        }
+        .nav-links ul li a{
+            color: #fff;
+            text-decoration: none;
+            font-size: 15px;
+        }
+        .nav-links{
+            position: fixed;
+            background: #2f2555;
+            height: 100vh;
+            width: 200px;
+            top: 0;
+            right: -200px;
+            text-align: left;
+            z-index: 2;
+            transition: 0.5s;
+        }
+        .nav-links ul{
+            padding: 30px;
+        }
+    
+        .homenav-links ul li{
+            display: block;
+        }
+        .homenav-links ul li a{
+            color: #fff;
+            text-decoration: none;
+            font-size: 15px;
+        }
+        .homenav-links{
+            position: absolute;
+            background: #2f2555;
+            height: 100vh;
+            width: 200px;
+            top: 0;
+            right: -200px;
+            text-align: left;
+            z-index: 2;
+            transition: 0.5s;
+        }
+        .homenav-links ul{
+            padding: 30px;
+        }
+    
+        .cv-button{
+            display: inline-block;
+            text-decoration: none;
+            color: #fff;
+            border: 1px solid #fff;
+            padding: 5px 20px;
+            font-size: 15px;
+            background: transparent;
+            position: relative;
+            cursor: pointer;
+        }
+        
+        .cv-button:hover{
+            border: 1px solid #7060ac;
+            background: #7060ac;
+            transition: 0.5s;
+        }
+        
+        .homeicons li:hover{
+            transform: translateY(-10px);
+        }
+        
+        .homeicons .fa{
+            color: #fff;
+            margin: 0 13px;
+            cursor: pointer;
+            padding: 18px 0;
+            font-size: 22px;
+        }
+    }
+
+    @media (max-height: 450px){
+        .text-box{
+            margin-top: 20px;
+        }
+    
+        .text-box h1{
+            font-size: 29px;
+            line-height: 20px;
+        }
+        .text-box h1:hover{
+            font-size: 31px;
+        }
+    
+        .text-box h3{
+            font-size: 18px;
+            line-height: 10px;
+        }
+        .text-box h4{
+            font-size: 13px;
+            line-height: 30px;
+            opacity: 100%;
+        }
+        nav img{
+            width: 80px;
+            display: block;
+            position: absolute;
+            background: none;
+            left: 10px;
+            top: 0;
+        }
+        nav .fa{
+            display: block;
+            color: #fff;
+            margin: 15px;
+            font-size: 30px;
+            cursor: pointer;
+        }
+        .nav-links ul li{
+            display: block;
+        }
+        .nav-links ul li a{
+            color: #fff;
+            text-decoration: none;
+            font-size: 15px;
+        }
+        .nav-links{
+            position: fixed;
+            background: #2f2555;
+            height: 100vh;
+            width: 200px;
+            top: 0;
+            right: -200px;
+            text-align: left;
+            z-index: 2;
+            transition: 0.5s;
+        }
+        .nav-links ul{
+            padding: 30px;
+        }
+    
+        .homenav-links ul li{
+            display: block;
+        }
+        .homenav-links ul li a{
+            color: #fff;
+            text-decoration: none;
+            font-size: 15px;
+        }
+        .homenav-links{
+            position: absolute;
+            background: #2f2555;
+            height: 100vh;
+            width: 200px;
+            top: 0;
+            right: -200px;
+            text-align: left;
+            z-index: 2;
+            transition: 0.5s;
+        }
+        .homenav-links ul{
+            padding: 30px;
+        }
+    
+        .cv-button{
+            display: inline-block;
+            text-decoration: none;
+            color: #fff;
+            border: 1px solid #fff;
+            padding: 5px 20px;
+            font-size: 15px;
+            background: transparent;
+            position: relative;
+            cursor: pointer;
+        }
+        
+        .cv-button:hover{
+            border: 1px solid #7060ac;
+            background: #7060ac;
+            transition: 0.5s;
+        }
+        
+        .homeicons li:hover{
+            transform: translateY(-10px);
+        }
+        
+        .homeicons .fa{
+            color: #fff;
+            margin: 0 13px;
+            cursor: pointer;
+            padding: 18px 0;
+            font-size: 22px;
+        }
+    }
+
+}
+
+@media (max-width: 299px){
+    .text-box{
+        margin-top: 300px;
+    }
+
+    .text-box h1{
+        font-size: 19px;
+        line-height: 20px;
+    }
+    .text-box h1:hover{
+        font-size: 20px;
+    }
+
+    .text-box h3{
+        font-size: 15px;
+        line-height: 0px;
+    }
+    .text-box h4{
+        font-size: 10px;
+        line-height: 30px;
+        opacity: 100%;
+    }
+    nav img{
+        width: 70px;
+        display: block;
+        position: absolute;
+        background: none;
+        left: 10px;
+        top: 0;
+    }
+    nav .fa{
+        display: block;
+        color: #fff;
+        margin: 15px;
+        font-size: 25px;
+        cursor: pointer;
+    }
+    .nav-links ul li{
+        display: block;
+    }
+    .nav-links ul li a{
+        color: #fff;
+        text-decoration: none;
+        font-size: 15px;
+    }
+    .nav-links{
+        position: fixed;
+        background: #2f2555;
+        height: 100vh;
+        width: 150px;
+        top: 0;
+        right: -150px;
+        text-align: left;
+        z-index: 2;
+        transition: 0.5s;
+    }
+    .nav-links ul{
+        padding: 10px;
+    }
+
+    .homenav-links ul li{
+        display: block;
+    }
+    .homenav-links ul li a{
+        color: #fff;
+        text-decoration: none;
+        font-size: 15px;
+    }
+    .homenav-links{
+        position: absolute;
+        background: #2f2555;
+        height: 100vh;
+        width: 150px;
+        top: 0;
+        right: -150px;
+        text-align: left;
+        z-index: 2;
+        transition: 0.5s;
+    }
+    .homenav-links ul{
+        padding: 10px;
+    }
+
+    .cv-button{
+        display: inline-block;
+        text-decoration: none;
+        color: #fff;
+        border: 1px solid #fff;
+        padding: 5px 14px;
+        font-size: 10px;
+        background: transparent;
+        position: relative;
+        cursor: pointer;
+    }
+    
+    .cv-button:hover{
+        border: 1px solid #7060ac;
+        background: #7060ac;
+        transition: 0.5s;
+    }
+    
+    .homeicons li:hover{
+        transform: translateY(-10px);
+    }
+    
+    .homeicons .fa{
+        color: #fff;
+        margin: 0 13px;
+        cursor: pointer;
+        padding: 18px 0;
+        font-size: 19px;
+    }
+
+    @media (max-height: 850px){
+        .text-box{
+            margin-top: 200px;
+        }
+    
+        .text-box h1{
+            font-size: 19px;
+            line-height: 20px;
+        }
+        .text-box h1:hover{
+            font-size: 20px;
+        }
+    
+        .text-box h3{
+            font-size: 15px;
+            line-height: 0px;
+        }
+        .text-box h4{
+            font-size: 10px;
+            line-height: 30px;
+            opacity: 100%;
+        }
+        nav img{
+            width: 70px;
+            display: block;
+            position: absolute;
+            background: none;
+            left: 10px;
+            top: 0;
+        }
+        nav .fa{
+            display: block;
+            color: #fff;
+            margin: 15px;
+            font-size: 25px;
+            cursor: pointer;
+        }
+        .nav-links ul li{
+            display: block;
+        }
+        .nav-links ul li a{
+            color: #fff;
+            text-decoration: none;
+            font-size: 15px;
+        }
+        .nav-links{
+            position: fixed;
+            background: #2f2555;
+            height: 100vh;
+            width: 150px;
+            top: 0;
+            right: -150px;
+            text-align: left;
+            z-index: 2;
+            transition: 0.5s;
+        }
+        .nav-links ul{
+            padding: 10px;
+        }
+    
+        .homenav-links ul li{
+            display: block;
+        }
+        .homenav-links ul li a{
+            color: #fff;
+            text-decoration: none;
+            font-size: 15px;
+        }
+        .homenav-links{
+            position: absolute;
+            background: #2f2555;
+            height: 100vh;
+            width: 150px;
+            top: 0;
+            right: -150px;
+            text-align: left;
+            z-index: 2;
+            transition: 0.5s;
+        }
+        .homenav-links ul{
+            padding: 10px;
+        }
+    
+        .cv-button{
+            display: inline-block;
+            text-decoration: none;
+            color: #fff;
+            border: 1px solid #fff;
+            padding: 5px 14px;
+            font-size: 10px;
+            background: transparent;
+            position: relative;
+            cursor: pointer;
+        }
+        
+        .cv-button:hover{
+            border: 1px solid #7060ac;
+            background: #7060ac;
+            transition: 0.5s;
+        }
+        
+        .homeicons li:hover{
+            transform: translateY(-10px);
+        }
+        
+        .homeicons .fa{
+            color: #fff;
+            margin: 0 13px;
+            cursor: pointer;
+            padding: 18px 0;
+            font-size: 19px;
+        }
+    }
+
+    @media (max-height: 650px){
+        .text-box{
+            margin-top: 100px;
+        }
+    
+        .text-box h1{
+            font-size: 19px;
+            line-height: 20px;
+        }
+        .text-box h1:hover{
+            font-size: 20px;
+        }
+    
+        .text-box h3{
+            font-size: 15px;
+            line-height: 0px;
+        }
+        .text-box h4{
+            font-size: 10px;
+            line-height: 30px;
+            opacity: 100%;
+        }
+        nav img{
+            width: 70px;
+            display: block;
+            position: absolute;
+            background: none;
+            left: 10px;
+            top: 0;
+        }
+        nav .fa{
+            display: block;
+            color: #fff;
+            margin: 15px;
+            font-size: 25px;
+            cursor: pointer;
+        }
+        .nav-links ul li{
+            display: block;
+        }
+        .nav-links ul li a{
+            color: #fff;
+            text-decoration: none;
+            font-size: 15px;
+        }
+        .nav-links{
+            position: fixed;
+            background: #2f2555;
+            height: 100vh;
+            width: 150px;
+            top: 0;
+            right: -150px;
+            text-align: left;
+            z-index: 2;
+            transition: 0.5s;
+        }
+        .nav-links ul{
+            padding: 10px;
+        }
+    
+        .homenav-links ul li{
+            display: block;
+        }
+        .homenav-links ul li a{
+            color: #fff;
+            text-decoration: none;
+            font-size: 15px;
+        }
+        .homenav-links{
+            position: absolute;
+            background: #2f2555;
+            height: 100vh;
+            width: 150px;
+            top: 0;
+            right: -150px;
+            text-align: left;
+            z-index: 2;
+            transition: 0.5s;
+        }
+        .homenav-links ul{
+            padding: 10px;
+        }
+    
+        .cv-button{
+            display: inline-block;
+            text-decoration: none;
+            color: #fff;
+            border: 1px solid #fff;
+            padding: 5px 14px;
+            font-size: 10px;
+            background: transparent;
+            position: relative;
+            cursor: pointer;
+        }
+        
+        .cv-button:hover{
+            border: 1px solid #7060ac;
+            background: #7060ac;
+            transition: 0.5s;
+        }
+        
+        .homeicons li:hover{
+            transform: translateY(-10px);
+        }
+        
+        .homeicons .fa{
+            color: #fff;
+            margin: 0 13px;
+            cursor: pointer;
+            padding: 18px 0;
+            font-size: 19px;
+        }
+    }
+
+    @media (max-height: 450px){
+        .text-box{
+            margin-top: 30px;
+        }
+    
+        .text-box h1{
+            font-size: 19px;
+            line-height: 20px;
+        }
+        .text-box h1:hover{
+            font-size: 20px;
+        }
+    
+        .text-box h3{
+            font-size: 15px;
+            line-height: 0px;
+        }
+        .text-box h4{
+            font-size: 10px;
+            line-height: 30px;
+            opacity: 100%;
+        }
+        nav img{
+            width: 70px;
+            display: block;
+            position: absolute;
+            background: none;
+            left: 10px;
+            top: 0;
+        }
+        nav .fa{
+            display: block;
+            color: #fff;
+            margin: 15px;
+            font-size: 25px;
+            cursor: pointer;
+        }
+        .nav-links ul li{
+            display: block;
+        }
+        .nav-links ul li a{
+            color: #fff;
+            text-decoration: none;
+            font-size: 15px;
+        }
+        .nav-links{
+            position: fixed;
+            background: #2f2555;
+            height: 100vh;
+            width: 150px;
+            top: 0;
+            right: -150px;
+            text-align: left;
+            z-index: 2;
+            transition: 0.5s;
+        }
+        .nav-links ul{
+            padding: 10px;
+        }
+    
+        .homenav-links ul li{
+            display: block;
+        }
+        .homenav-links ul li a{
+            color: #fff;
+            text-decoration: none;
+            font-size: 15px;
+        }
+        .homenav-links{
+            position: absolute;
+            background: #2f2555;
+            height: 100vh;
+            width: 150px;
+            top: 0;
+            right: -150px;
+            text-align: left;
+            z-index: 2;
+            transition: 0.5s;
+        }
+        .homenav-links ul{
+            padding: 10px;
+        }
+    
+        .cv-button{
+            display: inline-block;
+            text-decoration: none;
+            color: #fff;
+            border: 1px solid #fff;
+            padding: 5px 14px;
+            font-size: 10px;
+            background: transparent;
+            position: relative;
+            cursor: pointer;
+        }
+        
+        .cv-button:hover{
+            border: 1px solid #7060ac;
+            background: #7060ac;
+            transition: 0.5s;
+        }
+        
+        .homeicons li:hover{
+            transform: translateY(-10px);
+        }
+        
+        .homeicons .fa{
+            color: #fff;
+            margin: 0 13px;
+            cursor: pointer;
+            padding: 18px 0;
+            font-size: 19px;
+        }
+    }
+
 }
 
 .html, .body{
@@ -311,8 +2519,7 @@ nav .fa{
 .homeicons{
     list-style: none;
     width: 100%;
-    margin-top: auto;
-    margin-bottom: -200px;
+    
     text-align: center;
     position: relative;
     justify-content: center;
@@ -340,7 +2547,7 @@ nav .fa{
 /*--- Sub-Header ---*/
 
 .sub-header{
-    height: 50vh;
+    height: 60vh;
     width: 100%;
     background-image: linear-gradient(rgba(4,9,30,0.6),rgba(4,9,30,0.6)),url(media/subhead-pic.JPG);
     background-position: bottom 35% left 20%;
@@ -351,6 +2558,8 @@ nav .fa{
 
 .sub-header h1{
     margin-top: 75px;
+    position: relative;
+    text-align: center;
 }
 
 /*--- about.html ---*/
@@ -398,6 +2607,24 @@ nav .fa{
     color: #fff;
 }
 
+@media(max-height: 400px){
+
+    .sub-header{
+        height: 100vh;
+        width: 100%;
+        background-image: linear-gradient(rgba(4,9,30,0.6),rgba(4,9,30,0.6)),url(media/subhead-pic.JPG);
+        background-position: bottom 35% left 20%;
+        background-size: cover;
+        text-align: center;
+        color: #fff;
+    }
+    
+    .sub-header h1{
+        margin-top: 5px;
+    }
+
+}
+
 @media(max-width: 840px){
     .aboutme h1{
         text-align: center;
@@ -421,6 +2648,62 @@ nav .fa{
         margin: auto;
         display: block;
         margin-top: 20px;
+    }
+
+    .sub-header{
+        height: 60vh;
+        width: 100%;
+        background-image: linear-gradient(rgba(4,9,30,0.6),rgba(4,9,30,0.6)),url(media/subhead-pic.JPG);
+        background-position: bottom 35% left 20%;
+        background-size: cover;
+        text-align: center;
+        color: #fff;
+    }
+    
+    .sub-header h1{
+        margin-top: 5px;
+    }
+
+    .icons .fa{
+        color: #7060ac;
+        margin: 0 13px;
+        cursor: pointer;
+        padding: 18px 0;
+    }
+
+    @media(max-height: 400px){
+
+        .sub-header{
+            height: 100vh;
+            width: 100%;
+            background-image: linear-gradient(rgba(4,9,30,0.6),rgba(4,9,30,0.6)),url(media/subhead-pic.JPG);
+            background-position: bottom 35% left 20%;
+            background-size: cover;
+            text-align: center;
+            color: #fff;
+        }
+        
+        .sub-header h1{
+            margin-top: 5px;
+        }
+    
+    }
+
+}
+
+@media(max-width: 354px){
+    .sub-header h1{
+        margin-top: 5px;
+        position: relative;
+        text-align: center;
+    }
+
+    .icons .fa{
+        color: #7060ac;
+        margin: 0 13px;
+        cursor: pointer;
+        padding: 18px 0;
+        font-size: 20px;
     }
 }
 
@@ -498,6 +2781,19 @@ nav .fa{
 }
 
 @media(max-width: 840px){
+    .summary-content h2{
+        color: #222;
+        font-weight: 600;
+        font-size: 30px;
+        margin: 30px 0;
+        transition: 0.5s;
+        text-align: center;
+    }
+    
+    .summary-content h2:hover{
+        font-size: 36px;
+    }
+
     .summary-content p{
         text-align: center;
     }
@@ -520,6 +2816,37 @@ nav .fa{
 
     .summary-left img{
         width: 100%;
+    }
+}
+
+@media(max-width: 354px){
+    .summary-content h2{
+        font-size: 24px;
+        text-align: center;
+    }
+    
+    .summary-content h2:hover{
+        font-size: 28px;
+    }
+
+    .summary-right h3{
+        font-size: 10px;
+        margin-top: 20px;
+    }
+
+    .summary-right span{
+        font-size: 11px;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+
+    .summary-right div{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        color: #555;
+        padding: 2px;
+        box-sizing: border-box;
     }
 }
 
@@ -593,6 +2920,12 @@ p{
     transition: 0.5s;
 }
 
+.education-col img{
+    width: 200px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
 .education-col:hover{
     box-shadow: 0 0 20px 0px rgba(0,0,0,0.5);
 }
@@ -627,6 +2960,38 @@ h3{
         padding: 5px;
         text-align: center;
     }
+}
+
+@media(max-width: 354px){
+    
+    .education h1{
+        transition: 0.5s;
+        font-size: 24px;
+    }
+    
+    .education h1:hover{
+        font-size: 28px;
+    }
+
+    .education-col img{
+        width: 50px;
+        margin-top: 20px;
+        margin-bottom: 40px;
+    }
+
+    .education-col h3{
+        text-align: center;
+        font-weight: 600;
+        font-size: 12px;
+        margin: 10px 0;
+        background: #9e9ea2;
+    }
+    
+    .education-col p{
+        font-size: 15px;
+        
+    }
+
 }
 
 /*--- Projects ---*/
@@ -706,6 +3071,43 @@ h3{
         text-align: center;
     }
     
+    .projects-col img:hover{
+        -webkit-transform:scale(1);
+        transform:scale(1);
+        box-shadow: 0 0 20px 0px rgba(0,0,0,0.5);
+    }
+}
+
+@media(max-width: 354px){
+    .projects h1{
+        transition: 0.5s;
+        font-size: 24px;
+    }
+    
+    .projects h1:hover{
+        font-size: 28px;
+    }
+
+    .projects p{
+        font-size: 16px;
+        line-height: 25px;
+    }
+
+    .projects-col p{
+        font-size: 9px;
+        font-weight: 600;
+        line-height: 25px;
+        padding: 5px;
+        text-align: center;
+    }
+    
+    .projects-col h3{
+        margin-top: 16px;
+        margin-bottom: 15px;
+        text-align: center;
+        font-size: 14px;
+    }
+
     .projects-col img:hover{
         -webkit-transform:scale(1);
         transform:scale(1);
@@ -800,6 +3202,34 @@ h3{
     }
 }
 
+@media(max-width: 354px){
+    .experiences-col{
+        flex-basis: 32%;
+        border-radius: 10px;
+        margin-bottom: 30px;
+        position: relative;
+        overflow: hidden;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .experiences h1{
+        transition: 0.5s;
+        font-size: 24px;
+    }
+    
+    .experiences h1:hover{
+        font-size: 28px;
+    }
+
+    .experiences-grnlayer h3, .experiences-blulayer h3{
+        font-weight: 500;
+        font-size: 14px;
+    }
+    
+}
+
 /*--- CallToAction ---*/
 
 .cta{
@@ -822,6 +3252,12 @@ h3{
 @media(max-width: 840px){
     .cta h1{
         font-size: 24px;
+    }
+}
+
+@media(max-width: 354px){
+    .cta h1{
+        font-size: 20px;
     }
 }
 
@@ -923,5 +3359,57 @@ h3{
         position: relative;
         text-align: center;
     }  
+
+}
+
+@media(max-width: 354px){
+
+    .contact-col div{
+        margin-bottom: 0;
+        margin-top: 0;
+        display: block;
+        position: relative;
+        
+    }
+
+    .contact-col div .fa{
+        font-size: 0px;
+        display: inline-block;
+        margin-right: auto;
+        opacity: 0%;
+    }
+
+    .contact-col div p{
+        font-size: 9px;
+        font-weight: 500;
+        line-height: 15px;
+        text-align: center;
+    }
+    
+    .contact-col div h5{
+        font-size: 11px;
+        margin-top: 10px;
+        margin-bottom: 0;
+        color: #555;
+        font-weight: 700;
+        text-align: center;
+        margin-left: 0;
+    }
+
+    .contact-col button.cv-button.purple-button{
+        display: block;
+        margin-right: auto;
+        margin-left: auto;
+        position: relative;
+        text-align: center;
+    }  
+
+    .contact-col input{
+        font-size: 11px;
+    }
+
+    .contact-col textarea{
+        font-size: 11px;
+    }
 
 }
