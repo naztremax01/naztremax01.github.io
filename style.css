@@ -5,8 +5,9 @@
 }
 
 div{
-    white-space: nowrap;
-    text-justify: inter-word;
+    /*white-space: nowrap;*/
+    /*text-justify: inter-word;*/
+    overflow-wrap: break-word;
 }
 
 *{
@@ -2479,6 +2480,7 @@ nav .fa{
     margin: 0;
     resize: both;
     overflow: auto;
+    overflow-wrap: break-word;
 }
 
 /*--- Footer ---*/
@@ -2718,6 +2720,7 @@ nav .fa{
 
 .summary-left{
     flex-basis: 32%;
+    margin-right: 25%;
 }
 
 .summary-left img{
@@ -2857,6 +2860,7 @@ nav .fa{
     margin: auto;
     text-align: center;
     padding-top: 50px;
+    word-wrap: break-all;
 }
 
 h1{
@@ -2893,7 +2897,7 @@ p{
     text-align: center;
     font-weight: 600;
     margin: 10px 0;
-    background: #9e9ea2;
+    background: #e9e0d2;
 }
 
 .education-col p{
@@ -2902,19 +2906,20 @@ p{
     line-height: 25px;
     padding: 5px;
     text-align: center;
-    background: #9e9ea2;
+    background: #e9e0d2;
 }
 
 .row{
     margin-top: 5%;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
 }
 
 .education-col{
     flex-basis: 31%;
     border-radius: 5px;
     margin-bottom: 5%;
+    margin: 2%;
     padding: 6px;
     box-sizing: border-box;
     transition: 0.5s;
@@ -2958,7 +2963,7 @@ h3{
         font-weight: 600;
         font-size: 16px;
         margin: 10px 0;
-        background: #9e9ea2;
+        background: #e9e0d2;
     }
 
     .education-col p{
@@ -2992,7 +2997,7 @@ h3{
         font-weight: 600;
         font-size: 13.5px;
         margin: 10px 0;
-        background: #9e9ea2;
+        background: #e9e0d2;
     }
     
     .education-col p{
